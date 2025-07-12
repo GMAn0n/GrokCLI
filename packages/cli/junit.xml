@@ -1,0 +1,2081 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="349" failures="44" errors="0" time="3.071119918">
+    <testsuite name="src/grok.test.tsx" timestamp="2025-07-12T22:10:28.028Z" hostname="Mac" tests="2" failures="2" errors="0" skipped="0" time="0.002331625">
+        <testcase classname="src/grok.test.tsx" name="src/grok.test.tsx" time="0.002331625">
+            <failure message="No test found in suite src/grok.test.tsx" type="Error">
+Error: No test found in suite src/grok.test.tsx
+            </failure>
+        </testcase>
+        <testcase classname="src/grok.test.tsx" name="grok.tsx main function" time="0.001526917">
+            <failure message="No test found in suite grok.tsx main function" type="Error">
+Error: No test found in suite grok.tsx main function
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/nonInteractiveCli.test.ts" timestamp="2025-07-12T22:10:28.030Z" hostname="Mac" tests="6" failures="6" errors="0" skipped="0" time="0.008387333">
+        <testcase classname="src/nonInteractiveCli.test.ts" name="runNonInteractive &gt; should process input and write text output" time="0.004341167">
+            <failure message="config.getGrokClient is not a function" type="TypeError">
+TypeError: config.getGrokClient is not a function
+ ❯ Module.runNonInteractive src/nonInteractiveCli.ts:61:29
+ ❯ src/nonInteractiveCli.test.ts:85:5
+
+            </failure>
+        </testcase>
+        <testcase classname="src/nonInteractiveCli.test.ts" name="runNonInteractive &gt; should handle a single tool call and respond" time="0.001506167">
+            <failure message="config.getGrokClient is not a function" type="TypeError">
+TypeError: config.getGrokClient is not a function
+ ❯ Module.runNonInteractive src/nonInteractiveCli.ts:61:29
+ ❯ src/nonInteractiveCli.test.ts:138:5
+
+            </failure>
+        </testcase>
+        <testcase classname="src/nonInteractiveCli.test.ts" name="runNonInteractive &gt; should handle error during tool execution" time="0.000615083">
+            <failure message="config.getGrokClient is not a function" type="TypeError">
+TypeError: config.getGrokClient is not a function
+ ❯ Module.runNonInteractive src/nonInteractiveCli.ts:61:29
+ ❯ src/nonInteractiveCli.test.ts:198:5
+
+            </failure>
+        </testcase>
+        <testcase classname="src/nonInteractiveCli.test.ts" name="runNonInteractive &gt; should exit with error if sendMessageStream throws initially" time="0.0003345">
+            <failure message="config.getGrokClient is not a function" type="TypeError">
+TypeError: config.getGrokClient is not a function
+ ❯ Module.runNonInteractive src/nonInteractiveCli.ts:61:29
+ ❯ src/nonInteractiveCli.test.ts:222:5
+
+            </failure>
+        </testcase>
+        <testcase classname="src/nonInteractiveCli.test.ts" name="runNonInteractive &gt; should not exit if a tool is not found, and should send error back to model" time="0.000470791">
+            <failure message="config.getGrokClient is not a function" type="TypeError">
+TypeError: config.getGrokClient is not a function
+ ❯ Module.runNonInteractive src/nonInteractiveCli.ts:61:29
+ ❯ src/nonInteractiveCli.test.ts:274:5
+
+            </failure>
+        </testcase>
+        <testcase classname="src/nonInteractiveCli.test.ts" name="runNonInteractive &gt; should exit when max session turns are exceeded" time="0.000405125">
+            <failure message="config.getGrokClient is not a function" type="TypeError">
+TypeError: config.getGrokClient is not a function
+ ❯ Module.runNonInteractive src/nonInteractiveCli.ts:61:29
+ ❯ src/nonInteractiveCli.test.ts:335:5
+
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/config/auth.test.ts" timestamp="2025-07-12T22:10:28.032Z" hostname="Mac" tests="5" failures="0" errors="0" skipped="0" time="0.0025285">
+        <testcase classname="src/config/auth.test.ts" name="validateAuthMethod &gt; should return null for OAUTH" time="0.001094208">
+        </testcase>
+        <testcase classname="src/config/auth.test.ts" name="validateAuthMethod &gt; should return null for CLOUD_SHELL" time="0.000178125">
+        </testcase>
+        <testcase classname="src/config/auth.test.ts" name="validateAuthMethod &gt; USE_GROK &gt; should return null if XAI_API_KEY is set" time="0.000152083">
+        </testcase>
+        <testcase classname="src/config/auth.test.ts" name="validateAuthMethod &gt; USE_GROK &gt; should return an error message if XAI_API_KEY is not set" time="0.000186167">
+        </testcase>
+        <testcase classname="src/config/auth.test.ts" name="validateAuthMethod &gt; should return an error message for an invalid auth method" time="0.000243333">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/config/config.integration.test.ts" timestamp="2025-07-12T22:10:28.032Z" hostname="Mac" tests="11" failures="0" errors="0" skipped="0" time="0.034415375">
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; File Filtering Configuration &gt; should load default file filtering settings" time="0.026703125">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; File Filtering Configuration &gt; should load custom file filtering settings from configuration" time="0.00106125">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; File Filtering Configuration &gt; should merge user and workspace file filtering settings" time="0.000671458">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Configuration Integration &gt; should handle partial configuration objects gracefully" time="0.000703625">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Configuration Integration &gt; should handle empty configuration objects gracefully" time="0.00060225">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Configuration Integration &gt; should handle missing configuration sections gracefully" time="0.00050925">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Real-world Configuration Scenarios &gt; should handle a security-focused configuration" time="0.000501625">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Real-world Configuration Scenarios &gt; should handle a CI/CD environment configuration" time="0.000556083">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Checkpointing Configuration &gt; should enable checkpointing when the setting is true" time="0.00076725">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Extension Context Files &gt; should have an empty array for extension context files by default" time="0.000828291">
+        </testcase>
+        <testcase classname="src/config/config.integration.test.ts" name="Configuration Integration Tests &gt; Extension Context Files &gt; should correctly store and return extension context file paths" time="0.000564958">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/config/config.test.ts" timestamp="2025-07-12T22:10:28.033Z" hostname="Mac" tests="37" failures="0" errors="0" skipped="0" time="0.127928459">
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig &gt; should set showMemoryUsage to true when --show-memory-usage flag is present" time="0.039676084">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:68:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig &gt; should set showMemoryUsage to false when --memory flag is not present" time="0.002521875">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:75:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig &gt; should set showMemoryUsage to false by default from settings if CLI flag is not present" time="0.002063167">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:82:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig &gt; should prioritize CLI flag over settings for showMemoryUsage (CLI true, settings false)" time="0.001853458">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:89:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should set telemetry to false by default when no flag or setting is present" time="0.001790208">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:113:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should set telemetry to true when --telemetry flag is present" time="0.00836525">
+            <system-out>
+OpenTelemetry SDK started successfully.
+
+            </system-out>
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:120:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+Accessing resource attributes before async attributes settled
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should set telemetry to false when --no-telemetry flag is present" time="0.002125333">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:127:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use telemetry value from settings if CLI flag is not present (settings true)" time="0.004839917">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:134:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use telemetry value from settings if CLI flag is not present (settings false)" time="0.002613417">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:141:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should prioritize --telemetry CLI flag (true) over settings (false)" time="0.002004583">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:148:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should prioritize --no-telemetry CLI flag (false) over settings (true)" time="0.00172475">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:155:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use telemetry OTLP endpoint from settings if CLI flag is not present" time="0.001568834">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:164:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should prioritize --telemetry-otlp-endpoint CLI flag over settings" time="0.001770542">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:180:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use default endpoint if no OTLP endpoint is provided via CLI or settings" time="0.001580333">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:187:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use telemetry target from settings if CLI flag is not present" time="0.001561">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:196:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should prioritize --telemetry-target CLI flag over settings" time="0.001649167">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:207:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use default target if no target is provided via CLI or settings" time="0.001433542">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:214:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use telemetry log prompts from settings if CLI flag is not present" time="0.001406708">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:223:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should prioritize --telemetry-log-prompts CLI flag (true) over settings (false)" time="0.001489083">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:230:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should prioritize --no-telemetry-log-prompts CLI flag (false) over settings (true)" time="0.001497791">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:237:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig telemetry &gt; should use default log prompts (true) if no value is provided via CLI or settings" time="0.007175">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:244:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="Hierarchical Memory Loading (config.ts) - Placeholder Suite &gt; should pass extension context file paths to loadServerHierarchicalMemory" time="0.004738084">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:289:5 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeMcpServers &gt; should not modify the original settings object" time="0.004220541">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:349:5 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeExcludeTools &gt; should merge excludeTools from settings and extensions" time="0.002292542">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:375:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeExcludeTools &gt; should handle overlapping excludeTools between settings and extensions" time="0.001622334">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:394:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeExcludeTools &gt; should handle overlapping excludeTools between extensions" time="0.001454125">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:421:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeExcludeTools &gt; should return an empty array when no excludeTools are specified" time="0.001425125">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:431:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeExcludeTools &gt; should handle settings with excludeTools but no extensions" time="0.001573917">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:438:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeExcludeTools &gt; should handle extensions with excludeTools but no settings" time="0.001695667">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:457:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="mergeExcludeTools &gt; should not modify the original settings object" time="0.001562333">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:477:5 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig with allowed-mcp-server-names &gt; should allow all MCP servers if the flag is not provided" time="0.001436291">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:508:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig with allowed-mcp-server-names &gt; should allow only the specified MCP server" time="0.001589959">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:519:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig with allowed-mcp-server-names &gt; should allow multiple specified MCP servers" time="0.001557583">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:534:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig with allowed-mcp-server-names &gt; should handle server names that do not exist" time="0.00143425">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:550:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig with allowed-mcp-server-names &gt; should allow no MCP servers if the flag is provided but empty" time="0.001353292">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:558:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig extensions &gt; should not filter extensions if --extensions flag is not used" time="0.004014333">
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:578:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+        <testcase classname="src/config/config.test.ts" name="loadCliConfig extensions &gt; should filter extensions if --extensions flag is used" time="0.003326292">
+            <system-out>
+Activated extension: ext1 (version: 1.0.0)
+Disabled extension: ext2
+
+            </system-out>
+            <system-err>
+Error accessing installation ID file, generating ephemeral ID: Error: ENOENT: no such file or directory, mkdir &apos;/mock/home/user/.gemini&apos;
+[90m    at Proxy.mkdirSync (node:fs:1363:26)[39m
+    at ensureGeminiDirExists (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:19:8)
+    at getInstallationId (/Users/sam/sites/GrokCLI/packages/core/src/utils/user_id.ts:42:5)
+    at ClearcutLogger.createLogEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:91:53)
+    at ClearcutLogger.logStartSessionEvent (/Users/sam/sites/GrokCLI/packages/core/src/telemetry/clearcut-logger/clearcut-logger.ts:266:31)
+    at new Config (/Users/sam/sites/GrokCLI/packages/core/src/config/config.ts:247:41)
+    at new GrokConfig (/Users/sam/sites/GrokCLI/packages/core/src/config/grokConfig.ts:16:5)
+    at Module.loadCliConfig [90m(/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.ts:264:10[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:105:5)[39m
+    at [90m/Users/sam/sites/GrokCLI/packages/cli/[39msrc/config/config.test.ts:592:20 {
+  errno: [33m-2[39m,
+  code: [32m&apos;ENOENT&apos;[39m,
+  syscall: [32m&apos;mkdir&apos;[39m,
+  path: [32m&apos;/mock/home/user/.gemini&apos;[39m
+}
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/config/extension.test.ts" timestamp="2025-07-12T22:10:28.038Z" hostname="Mac" tests="7" failures="1" errors="0" skipped="0" time="0.01463225">
+        <testcase classname="src/config/extension.test.ts" name="loadExtensions &gt; should load context file path when GEMINI.md is present" time="0.01075675">
+            <system-out>
+Loading extension: ext1 (version: 1.0.0)
+Loading extension: ext2 (version: 2.0.0)
+
+            </system-out>
+            <failure message="expected [] to deeply equal [ Array(1) ]" type="AssertionError">
+AssertionError: expected [] to deeply equal [ Array(1) ]
+
+- Expected
++ Received
+
+- [
+-   &quot;/var/folders/6j/zscd_z_56svbhtbfxkyhb4fc0000gn/T/gemini-cli-test-workspace-lHQNk7/.grok/extensions/ext1/GEMINI.md&quot;,
+- ]
++ []
+
+ ❯ src/config/extension.test.ts:59:32
+
+            </failure>
+        </testcase>
+        <testcase classname="src/config/extension.test.ts" name="loadExtensions &gt; should load context file path from the extension config" time="0.001855125">
+            <system-out>
+Loading extension: ext1 (version: 1.0.0)
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/config/extension.test.ts" name="filterActiveExtensions &gt; should return all extensions if no enabled extensions are provided" time="0.000134958">
+        </testcase>
+        <testcase classname="src/config/extension.test.ts" name="filterActiveExtensions &gt; should return only the enabled extensions" time="0.000266459">
+            <system-out>
+Activated extension: ext1 (version: 1.0.0)
+Disabled extension: ext2
+Activated extension: ext3 (version: 1.0.0)
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/config/extension.test.ts" name="filterActiveExtensions &gt; should return no extensions when &quot;none&quot; is provided" time="0.000108458">
+            <system-out>
+All extensions are disabled.
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/config/extension.test.ts" name="filterActiveExtensions &gt; should handle case-insensitivity" time="0.00022625">
+            <system-out>
+Activated extension: ext1 (version: 1.0.0)
+Disabled extension: ext2
+Disabled extension: ext3
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/config/extension.test.ts" name="filterActiveExtensions &gt; should log an error for unknown extensions" time="0.000304792">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/config/settings.test.ts" timestamp="2025-07-12T22:10:28.039Z" hostname="Mac" tests="25" failures="0" errors="0" skipped="0" time="0.012273875">
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should load empty settings if no files exist" time="0.002040541">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should load system settings if only system file exists" time="0.001017125">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should load user settings if only user file exists" time="0.00037175">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should load workspace settings if only workspace file exists" time="0.000350667">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should merge user and workspace settings, with workspace taking precedence" time="0.000698916">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should merge system, user and workspace settings, with system taking precedence over workspace, and workspace over user" time="0.000404875">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should handle contextFileName correctly when only in user settings" time="0.000305833">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should handle contextFileName correctly when only in workspace settings" time="0.000265458">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should default contextFileName to undefined if not in any settings file" time="0.000348417">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should load telemetry setting from user settings" time="0.000251833">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should load telemetry setting from workspace settings" time="0.000789791">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should prioritize workspace telemetry setting over user setting" time="0.0002965">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should have telemetry as undefined if not in any settings file" time="0.00022675">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should handle JSON parsing errors gracefully" time="0.000641166">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should resolve environment variables in user settings" time="0.000296958">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should resolve environment variables in workspace settings" time="0.000276">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should prioritize user env variables over workspace env variables if keys clash after resolution" time="0.000298042">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should prioritize workspace env variables over user env variables if keys clash after resolution" time="0.000249334">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should prioritize system env variables over workspace env variables if keys clash after resolution" time="0.000255167">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should leave unresolved environment variables as is" time="0.000252875">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should resolve multiple environment variables in a single string" time="0.000299">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should resolve environment variables in arrays" time="0.00024875">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should correctly pass through null, boolean, and number types, and handle undefined properties" time="0.00036575">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; loadSettings &gt; should resolve multiple concatenated environment variables in a single string value" time="0.000251375">
+        </testcase>
+        <testcase classname="src/config/settings.test.ts" name="Settings Loading and Merging &gt; LoadedSettings class &gt; setValue should update the correct scope and recompute merged settings" time="0.000409833">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/services/CommandService.test.ts" timestamp="2025-07-12T22:10:28.040Z" hostname="Mac" tests="5" failures="0" errors="0" skipped="0" time="0.003673417">
+        <testcase classname="src/services/CommandService.test.ts" name="CommandService &gt; when using default production loader &gt; should initialize with an empty command tree" time="0.00089975">
+        </testcase>
+        <testcase classname="src/services/CommandService.test.ts" name="CommandService &gt; when using default production loader &gt; loadCommands &gt; should load the built-in commands into the command tree" time="0.000608167">
+        </testcase>
+        <testcase classname="src/services/CommandService.test.ts" name="CommandService &gt; when using default production loader &gt; loadCommands &gt; should overwrite any existing commands when called again" time="0.000083">
+        </testcase>
+        <testcase classname="src/services/CommandService.test.ts" name="CommandService &gt; when using default production loader &gt; getCommandTree &gt; should return the current command tree" time="0.000441167">
+        </testcase>
+        <testcase classname="src/services/CommandService.test.ts" name="CommandService &gt; when initialized with an injected loader function &gt; should use the provided loader instead of the built-in one" time="0.000833125">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/test-utils/mockCommandContext.test.ts" timestamp="2025-07-12T22:10:28.041Z" hostname="Mac" tests="3" failures="0" errors="0" skipped="0" time="0.002409583">
+        <testcase classname="src/test-utils/mockCommandContext.test.ts" name="createMockCommandContext &gt; should return a valid CommandContext object with default mocks" time="0.001297458">
+        </testcase>
+        <testcase classname="src/test-utils/mockCommandContext.test.ts" name="createMockCommandContext &gt; should apply top-level overrides correctly" time="0.000334584">
+        </testcase>
+        <testcase classname="src/test-utils/mockCommandContext.test.ts" name="createMockCommandContext &gt; should apply deeply nested overrides correctly" time="0.000172167">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/App.test.tsx" timestamp="2025-07-12T22:10:28.041Z" hostname="Mac" tests="13" failures="0" errors="0" skipped="0" time="0.236621417">
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display default &quot;GEMINI.md&quot; in footer when contextFileName is not set and count is 1" time="0.037566083">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display default &quot;GEMINI.md&quot; with plural when contextFileName is not set and count is &gt; 1" time="0.014179791">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display custom contextFileName in footer when set and count is 1" time="0.008837292">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display a generic message when multiple context files with different names are provided" time="0.009796958">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display custom contextFileName with plural when set and count is &gt; 1" time="0.008480041">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should not display context file message if count is 0, even if contextFileName is set" time="0.010444916">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display GEMINI.md and MCP server count when both are present" time="0.007950583">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display only MCP server count when GEMINI.md count is 0" time="0.009618792">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should display Tips component by default" time="0.013776375">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should not display Tips component when hideTips is true" time="0.036414833">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; should show tips if system says show, but workspace and user settings say hide" time="0.033687333">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; when no theme is set &gt; should display theme dialog if NO_COLOR is not set" time="0.035643625">
+        </testcase>
+        <testcase classname="src/ui/App.test.tsx" name="App UI &gt; when no theme is set &gt; should display a message if NO_COLOR is set" time="0.008979375">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/utils/startupWarnings.test.ts" timestamp="2025-07-12T22:10:28.042Z" hostname="Mac" tests="4" failures="0" errors="0" skipped="4" time="0">
+        <testcase classname="src/utils/startupWarnings.test.ts" name="startupWarnings &gt; should return warnings from the file and delete it" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/utils/startupWarnings.test.ts" name="startupWarnings &gt; should return an empty array if the file does not exist" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/utils/startupWarnings.test.ts" name="startupWarnings &gt; should return an error message if reading the file fails" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="src/utils/startupWarnings.test.ts" name="startupWarnings &gt; should return a warning if deleting the file fails" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/utils/userStartupWarnings.test.ts" timestamp="2025-07-12T22:10:28.042Z" hostname="Mac" tests="3" failures="0" errors="0" skipped="0" time="0.002079709">
+        <testcase classname="src/utils/userStartupWarnings.test.ts" name="getUserStartupWarnings &gt; home directory check &gt; should return a warning when running in home directory" time="0.001098833">
+        </testcase>
+        <testcase classname="src/utils/userStartupWarnings.test.ts" name="getUserStartupWarnings &gt; home directory check &gt; should not return a warning when running in a project directory" time="0.000207041">
+        </testcase>
+        <testcase classname="src/utils/userStartupWarnings.test.ts" name="getUserStartupWarnings &gt; home directory check &gt; should handle errors when checking directory" time="0.000172333">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/commands/clearCommand.test.ts" timestamp="2025-07-12T22:10:28.043Z" hostname="Mac" tests="2" failures="0" errors="0" skipped="0" time="0.006113791">
+        <testcase classname="src/ui/commands/clearCommand.test.ts" name="clearCommand &gt; should set debug message, reset chat, and clear UI when config is available" time="0.004411083">
+        </testcase>
+        <testcase classname="src/ui/commands/clearCommand.test.ts" name="clearCommand &gt; should not attempt to reset chat if config service is not available" time="0.000423125">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/commands/helpCommand.test.ts" timestamp="2025-07-12T22:10:28.043Z" hostname="Mac" tests="2" failures="0" errors="0" skipped="0" time="0.002535791">
+        <testcase classname="src/ui/commands/helpCommand.test.ts" name="helpCommand &gt; should return a dialog action and log a debug message for &apos;/help&apos;" time="0.00182725">
+        </testcase>
+        <testcase classname="src/ui/commands/helpCommand.test.ts" name="helpCommand &gt; should also be triggered by its alternative name &apos;?&apos;" time="0.000107042">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/commands/memoryCommand.test.ts" timestamp="2025-07-12T22:10:28.043Z" hostname="Mac" tests="8" failures="0" errors="0" skipped="0" time="0.006890041">
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory show &gt; should display a message if memory is empty" time="0.0031325">
+        </testcase>
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory show &gt; should display the memory content and file count if it exists" time="0.000346166">
+        </testcase>
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory add &gt; should return an error message if no arguments are provided" time="0.00028725">
+        </testcase>
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory add &gt; should return a tool action and add an info message when arguments are provided" time="0.000215792">
+        </testcase>
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory refresh &gt; should display success message when memory is refreshed with content" time="0.000322125">
+        </testcase>
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory refresh &gt; should display success message when memory is refreshed with no content" time="0.000191375">
+        </testcase>
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory refresh &gt; should display an error message if refreshing fails" time="0.00052275">
+        </testcase>
+        <testcase classname="src/ui/commands/memoryCommand.test.ts" name="memoryCommand &gt; /memory refresh &gt; should not throw if config service is unavailable" time="0.000519667">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/contexts/SessionContext.test.tsx" timestamp="2025-07-12T22:10:28.044Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/contexts/SessionContext.test.tsx" name="src/ui/contexts/SessionContext.test.tsx" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/AuthDialog.test.tsx" timestamp="2025-07-12T22:10:28.045Z" hostname="Mac" tests="5" failures="2" errors="0" skipped="0" time="0.387066916">
+        <testcase classname="src/ui/components/AuthDialog.test.tsx" name="AuthDialog &gt; should show an error if the initial auth type is invalid" time="0.047534375">
+        </testcase>
+        <testcase classname="src/ui/components/AuthDialog.test.tsx" name="AuthDialog &gt; should detect GEMINI_API_KEY environment variable" time="0.017258667">
+            <failure message="expected &apos;╭────────────────────────────────────…&apos; to contain &apos;Existing API key detected (GEMINI_API…&apos;" type="AssertionError">
+AssertionError: expected &apos;╭────────────────────────────────────…&apos; to contain &apos;Existing API key detected (GEMINI_API…&apos;
+
+- Expected
++ Received
+
+- Existing API key detected (GEMINI_API_KEY)
++ ╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
++ │                                                                                                  │
++ │ Get started                                                                                      │
++ │                                                                                                  │
++ │ How would you like to authenticate for this project?                                             │
++ │                                                                                                  │
++ │ ● Login with Google                                                                              │
++ │ ○ Grok (xAI) API Key                                                                             │
++ │                                                                                                  │
++ │ (Use Enter to select)                                                                            │
++ │                                                                                                  │
++ │ Terms of Services and Privacy Notice for GrokCLI                                                 │
++ │                                                                                                  │
++ │ https://github.com/xai-org/grok-cli/blob/main/docs/tos-privacy.md                                │
++ │                                                                                                  │
++ ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
+
+ ❯ src/ui/components/AuthDialog.test.tsx:83:25
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/components/AuthDialog.test.tsx" name="AuthDialog &gt; should prevent exiting when no auth method is selected and show error message" time="0.110568834">
+        </testcase>
+        <testcase classname="src/ui/components/AuthDialog.test.tsx" name="AuthDialog &gt; should not exit if there is already an error message" time="0.1051705">
+        </testcase>
+        <testcase classname="src/ui/components/AuthDialog.test.tsx" name="AuthDialog &gt; should allow exiting when auth method is already selected" time="0.105774167">
+            <failure message="expected &quot;spy&quot; to be called with arguments: [ undefined, &apos;User&apos; ][90m
+
+Number of calls: [1m0[22m
+[39m" type="AssertionError">
+AssertionError: expected &quot;spy&quot; to be called with arguments: [ undefined, &apos;User&apos; ]
+
+Number of calls: 0
+
+ ❯ src/ui/components/AuthDialog.test.tsx:187:22
+
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/HistoryItemDisplay.test.tsx" timestamp="2025-07-12T22:10:28.045Z" hostname="Mac" tests="6" failures="1" errors="0" skipped="0" time="0.036932625">
+        <testcase classname="src/ui/components/HistoryItemDisplay.test.tsx" name="&lt;HistoryItemDisplay /&gt; &gt; renders UserMessage for &quot;user&quot; type" time="0.011648958">
+        </testcase>
+        <testcase classname="src/ui/components/HistoryItemDisplay.test.tsx" name="&lt;HistoryItemDisplay /&gt; &gt; renders StatsDisplay for &quot;stats&quot; type" time="0.004190042">
+        </testcase>
+        <testcase classname="src/ui/components/HistoryItemDisplay.test.tsx" name="&lt;HistoryItemDisplay /&gt; &gt; renders AboutBox for &quot;about&quot; type" time="0.010012833">
+            <failure message="expected &apos;\n╭──────────────────────────────────…&apos; to contain &apos;About Gemini CLI&apos;" type="AssertionError">
+AssertionError: expected &apos;\n╭──────────────────────────────────…&apos; to contain &apos;About Gemini CLI&apos;
+
+- Expected
++ Received
+
+- About Gemini CLI
++
++ ╭──────────────────────────────────────────────────────────────────────────────────────────────────╮
++ │                                                                                                  │
++ │ About Grok CLI                                                                                   │
++ │                                                                                                  │
++ │ CLI Version                       1.0.0                                                          │
++ │ Model                             test-model                                                     │
++ │ Sandbox                           test-env                                                       │
++ │ OS                                test-os                                                        │
++ │ Auth Method                       test-auth                                                      │
++ │ GCP Project                       test-project                                                   │
++ │                                                                                                  │
++ ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
++
+
+ ❯ src/ui/components/HistoryItemDisplay.test.tsx:66:25
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/components/HistoryItemDisplay.test.tsx" name="&lt;HistoryItemDisplay /&gt; &gt; renders ModelStatsDisplay for &quot;model_stats&quot; type" time="0.001409542">
+        </testcase>
+        <testcase classname="src/ui/components/HistoryItemDisplay.test.tsx" name="&lt;HistoryItemDisplay /&gt; &gt; renders ToolStatsDisplay for &quot;tool_stats&quot; type" time="0.001153875">
+        </testcase>
+        <testcase classname="src/ui/components/HistoryItemDisplay.test.tsx" name="&lt;HistoryItemDisplay /&gt; &gt; renders SessionSummaryDisplay for &quot;quit&quot; type" time="0.00772575">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/InputPrompt.test.tsx" timestamp="2025-07-12T22:10:28.046Z" hostname="Mac" tests="14" failures="0" errors="0" skipped="0" time="1.589521417">
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should call shellHistory.getPreviousCommand on up arrow in shell mode" time="0.121563958">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should call shellHistory.getNextCommand on down arrow in shell mode" time="0.106684917">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should set the buffer text when a shell history command is retrieved" time="0.10552625">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should call shellHistory.addCommandToHistory on submit in shell mode" time="0.103972459">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should NOT call shell history methods when not in shell mode" time="0.206288">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should complete a partial parent command and add a space" time="0.103085625">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should append a sub-command when the parent command is already complete with a space" time="0.104359958">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should handle the &quot;backspace&quot; edge case correctly" time="0.105996458">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should complete a partial argument for a command" time="0.106165">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should autocomplete on Enter when suggestions are active, without submitting" time="0.105353542">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should complete a command based on its altName" time="0.1046675">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should not submit on Enter when the buffer is empty or only contains whitespace" time="0.102963834">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should submit directly on Enter when a complete leaf command is typed" time="0.106121625">
+        </testcase>
+        <testcase classname="src/ui/components/InputPrompt.test.tsx" name="InputPrompt &gt; should autocomplete an @-path on Enter without submitting" time="0.105483459">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/LoadingIndicator.test.tsx" timestamp="2025-07-12T22:10:28.047Z" hostname="Mac" tests="11" failures="0" errors="0" skipped="0" time="0.024079792">
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should not render when streamingState is Idle" time="0.008419916">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should render spinner, phrase, and time when streamingState is Responding" time="0.0045595">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should render spinner (static), phrase but no time/cancel when streamingState is WaitingForConfirmation" time="0.001605625">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should display the currentLoadingPhrase correctly" time="0.000944458">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should display the elapsedTime correctly when Responding" time="0.0008915">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should display the elapsedTime correctly in human-readable format" time="0.000751459">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should render rightContent when provided" time="0.000825">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should transition correctly between states using rerender" time="0.002789292">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should display fallback phrase if thought is empty" time="0.000745375">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should display the subject of a thought" time="0.000850083">
+        </testcase>
+        <testcase classname="src/ui/components/LoadingIndicator.test.tsx" name="&lt;LoadingIndicator /&gt; &gt; should prioritize thought.subject over currentLoadingPhrase" time="0.000846416">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/ModelStatsDisplay.test.tsx" timestamp="2025-07-12T22:10:28.047Z" hostname="Mac" tests="6" failures="0" errors="0" skipped="0" time="0.060472584">
+        <testcase classname="src/ui/components/ModelStatsDisplay.test.tsx" name="&lt;ModelStatsDisplay /&gt; &gt; should render &quot;no API calls&quot; message when there are no active models" time="0.014501791">
+        </testcase>
+        <testcase classname="src/ui/components/ModelStatsDisplay.test.tsx" name="&lt;ModelStatsDisplay /&gt; &gt; should not display conditional rows if no model has data for them" time="0.008588292">
+        </testcase>
+        <testcase classname="src/ui/components/ModelStatsDisplay.test.tsx" name="&lt;ModelStatsDisplay /&gt; &gt; should display conditional rows if at least one model has data" time="0.005623709">
+        </testcase>
+        <testcase classname="src/ui/components/ModelStatsDisplay.test.tsx" name="&lt;ModelStatsDisplay /&gt; &gt; should display stats for multiple models correctly" time="0.022077083">
+        </testcase>
+        <testcase classname="src/ui/components/ModelStatsDisplay.test.tsx" name="&lt;ModelStatsDisplay /&gt; &gt; should handle large values without wrapping or overlapping" time="0.004515625">
+        </testcase>
+        <testcase classname="src/ui/components/ModelStatsDisplay.test.tsx" name="&lt;ModelStatsDisplay /&gt; &gt; should display a single model correctly" time="0.004356459">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/SessionSummaryDisplay.test.tsx" timestamp="2025-07-12T22:10:28.048Z" hostname="Mac" tests="1" failures="0" errors="0" skipped="0" time="0.024289125">
+        <testcase classname="src/ui/components/SessionSummaryDisplay.test.tsx" name="&lt;SessionSummaryDisplay /&gt; &gt; renders the summary display with a title" time="0.023657834">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/StatsDisplay.test.tsx" timestamp="2025-07-12T22:10:28.048Z" hostname="Mac" tests="10" failures="0" errors="0" skipped="0" time="0.077453167">
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; renders only the Performance section in its zero state" time="0.021041625">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; renders a table with two models correctly" time="0.010922833">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; renders all sections when all data is present" time="0.012180583">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; Conditional Rendering Tests &gt; hides User Agreement when no decisions are made" time="0.004062791">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; Conditional Rendering Tests &gt; hides Efficiency section when cache is not used" time="0.003346708">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; Conditional Color Tests &gt; renders success rate in green for high values" time="0.002854042">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; Conditional Color Tests &gt; renders success rate in yellow for medium values" time="0.00652375">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; Conditional Color Tests &gt; renders success rate in red for low values" time="0.003491834">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; Title Rendering &gt; renders the default title when no title prop is provided" time="0.002174833">
+        </testcase>
+        <testcase classname="src/ui/components/StatsDisplay.test.tsx" name="&lt;StatsDisplay /&gt; &gt; Title Rendering &gt; renders the custom title when a title prop is provided" time="0.009311625">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/ToolStatsDisplay.test.tsx" timestamp="2025-07-12T22:10:28.049Z" hostname="Mac" tests="5" failures="0" errors="0" skipped="0" time="0.035076083">
+        <testcase classname="src/ui/components/ToolStatsDisplay.test.tsx" name="&lt;ToolStatsDisplay /&gt; &gt; should render &quot;no tool calls&quot; message when there are no active tools" time="0.012065375">
+        </testcase>
+        <testcase classname="src/ui/components/ToolStatsDisplay.test.tsx" name="&lt;ToolStatsDisplay /&gt; &gt; should display stats for a single tool correctly" time="0.005454833">
+        </testcase>
+        <testcase classname="src/ui/components/ToolStatsDisplay.test.tsx" name="&lt;ToolStatsDisplay /&gt; &gt; should display stats for multiple tools correctly" time="0.005176083">
+        </testcase>
+        <testcase classname="src/ui/components/ToolStatsDisplay.test.tsx" name="&lt;ToolStatsDisplay /&gt; &gt; should handle large values without wrapping or overlapping" time="0.006699875">
+        </testcase>
+        <testcase classname="src/ui/components/ToolStatsDisplay.test.tsx" name="&lt;ToolStatsDisplay /&gt; &gt; should handle zero decisions gracefully" time="0.004835">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/atCommandProcessor.test.ts" timestamp="2025-07-12T22:10:28.049Z" hostname="Mac" tests="17" failures="0" errors="0" skipped="0" time="0.01554475">
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should pass through query if no @ command is present" time="0.006828167">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should pass through original query if only a lone @ symbol is present" time="0.00054">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should process a valid text file path" time="0.00164875">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should process a valid directory path and convert to glob" time="0.000572083">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should process a valid image file path (as text content for now)" time="0.000238375">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should handle query with text before and after @command" time="0.000340542">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should correctly unescape paths with escaped spaces" time="0.000338833">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should handle multiple @file references" time="0.000410625">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should handle multiple @file references with interleaved text" time="0.000415708">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should handle a mix of valid, invalid, and lone @ references" time="0.000895542">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should return original query if all @paths are invalid or lone @" time="0.000274125">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; should process a file path case-insensitively" time="0.000535375">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; git-aware filtering &gt; should skip git-ignored files in @ commands" time="0.0003015">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; git-aware filtering &gt; should process non-git-ignored files normally" time="0.00039375">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; git-aware filtering &gt; should handle mixed git-ignored and valid files" time="0.000475458">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; git-aware filtering &gt; should always ignore .git directory files" time="0.0002675">
+        </testcase>
+        <testcase classname="src/ui/hooks/atCommandProcessor.test.ts" name="handleAtCommand &gt; when recursive file search is disabled &gt; should not use glob search for a nonexistent file" time="0.00027375">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/shellCommandProcessor.test.ts" timestamp="2025-07-12T22:10:28.050Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/shellCommandProcessor.test.ts" name="src/ui/hooks/shellCommandProcessor.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/slashCommandProcessor.test.ts" timestamp="2025-07-12T22:10:28.050Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/slashCommandProcessor.test.ts" name="src/ui/hooks/slashCommandProcessor.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useAutoAcceptIndicator.test.ts" timestamp="2025-07-12T22:10:28.051Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useAutoAcceptIndicator.test.ts" name="src/ui/hooks/useAutoAcceptIndicator.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useCompletion.integration.test.ts" timestamp="2025-07-12T22:10:28.051Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useCompletion.integration.test.ts" name="src/ui/hooks/useCompletion.integration.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useConsoleMessages.test.ts" timestamp="2025-07-12T22:10:28.052Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useConsoleMessages.test.ts" name="src/ui/hooks/useConsoleMessages.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useEditorSettings.test.ts" timestamp="2025-07-12T22:10:28.052Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useEditorSettings.test.ts" name="src/ui/hooks/useEditorSettings.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useGeminiStream.test.tsx" timestamp="2025-07-12T22:10:28.052Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useGeminiStream.test.tsx" name="src/ui/hooks/useGeminiStream.test.tsx" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useGitBranchName.test.ts" timestamp="2025-07-12T22:10:28.053Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useGitBranchName.test.ts" name="src/ui/hooks/useGitBranchName.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useHistoryManager.test.ts" timestamp="2025-07-12T22:10:28.053Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useHistoryManager.test.ts" name="src/ui/hooks/useHistoryManager.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useInputHistory.test.ts" timestamp="2025-07-12T22:10:28.053Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useInputHistory.test.ts" name="src/ui/hooks/useInputHistory.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useKeypress.test.ts" timestamp="2025-07-12T22:10:28.053Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useKeypress.test.ts" name="src/ui/hooks/useKeypress.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useLoadingIndicator.test.ts" timestamp="2025-07-12T22:10:28.054Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useLoadingIndicator.test.ts" name="src/ui/hooks/useLoadingIndicator.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/usePhraseCycler.test.ts" timestamp="2025-07-12T22:10:28.054Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/usePhraseCycler.test.ts" name="src/ui/hooks/usePhraseCycler.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useShellHistory.test.ts" timestamp="2025-07-12T22:10:28.054Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useShellHistory.test.ts" name="src/ui/hooks/useShellHistory.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useTimer.test.ts" timestamp="2025-07-12T22:10:28.054Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useTimer.test.ts" name="src/ui/hooks/useTimer.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/hooks/useToolScheduler.test.ts" timestamp="2025-07-12T22:10:28.055Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/hooks/useToolScheduler.test.ts" name="src/ui/hooks/useToolScheduler.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/MarkdownDisplay.test.tsx" timestamp="2025-07-12T22:10:28.056Z" hostname="Mac" tests="12" failures="0" errors="0" skipped="0" time="0.082830417">
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should render a simple table" time="0.015408208">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should handle tables with varying column widths" time="0.004106042">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should handle empty cells in tables" time="0.002460375">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should handle mixed content with tables" time="0.006294042">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should handle tables with empty cells at edges" time="0.002117167">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should handle PR reviewer test case 1" time="0.002382292">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should handle PR reviewer test case 2 - long table" time="0.002616875">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should not render malformed tables" time="0.001243083">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should not crash when rendering a very wide table in a narrow terminal" time="0.008549667">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Table Rendering &gt; should handle inline markdown in tables" time="0.02647025">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Existing Functionality &gt; should render headers correctly" time="0.001357875">
+        </testcase>
+        <testcase classname="src/ui/utils/MarkdownDisplay.test.tsx" name="MarkdownDisplay &gt; Existing Functionality &gt; should render code blocks correctly" time="0.009071625">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/computeStats.test.ts" timestamp="2025-07-12T22:10:28.056Z" hostname="Mac" tests="11" failures="0" errors="0" skipped="0" time="0.00282675">
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="calculateErrorRate &gt; should return 0 if totalRequests is 0" time="0.000731875">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="calculateErrorRate &gt; should calculate the error rate correctly" time="0.00007475">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="calculateAverageLatency &gt; should return 0 if totalRequests is 0" time="0.000064167">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="calculateAverageLatency &gt; should calculate the average latency correctly" time="0.000043125">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="calculateCacheHitRate &gt; should return 0 if prompt tokens is 0" time="0.000050292">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="calculateCacheHitRate &gt; should calculate the cache hit rate correctly" time="0.000039834">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="computeSessionStats &gt; should return all zeros for initial empty metrics" time="0.0004155">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="computeSessionStats &gt; should correctly calculate API and tool time percentages" time="0.000215667">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="computeSessionStats &gt; should correctly calculate cache efficiency" time="0.000099625">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="computeSessionStats &gt; should correctly calculate success and agreement rates" time="0.00006275">
+        </testcase>
+        <testcase classname="src/ui/utils/computeStats.test.ts" name="computeSessionStats &gt; should handle division by zero gracefully" time="0.000083708">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/displayUtils.test.ts" timestamp="2025-07-12T22:10:28.057Z" hostname="Mac" tests="5" failures="0" errors="0" skipped="0" time="0.001715917">
+        <testcase classname="src/ui/utils/displayUtils.test.ts" name="displayUtils &gt; getStatusColor &gt; should return green for values &gt;= green threshold" time="0.000759625">
+        </testcase>
+        <testcase classname="src/ui/utils/displayUtils.test.ts" name="displayUtils &gt; getStatusColor &gt; should return yellow for values &lt; green and &gt;= yellow threshold" time="0.000091042">
+        </testcase>
+        <testcase classname="src/ui/utils/displayUtils.test.ts" name="displayUtils &gt; getStatusColor &gt; should return red for values &lt; yellow threshold" time="0.000065333">
+        </testcase>
+        <testcase classname="src/ui/utils/displayUtils.test.ts" name="displayUtils &gt; getStatusColor &gt; should return defaultColor for values &lt; yellow threshold when provided" time="0.0000535">
+        </testcase>
+        <testcase classname="src/ui/utils/displayUtils.test.ts" name="displayUtils &gt; Threshold Constants &gt; should have the correct values" time="0.000126209">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/errorParsing.test.ts" timestamp="2025-07-12T22:10:28.058Z" hostname="Mac" tests="21" failures="14" errors="0" skipped="0" time="0.024871125">
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a valid API error JSON" time="0.000827334">
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 API error with the default message" time="0.005312875">
+            <failure message="expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;Possible quota limitations in place o…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;Possible quota limitations in place o…&apos;
+
+- Expected
++ Received
+
+- Possible quota limitations in place or slow response times detected. Switching to the gemini-2.5-flash model
++ [API Error: Rate limit exceeded (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:41:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 API error with the personal message" time="0.000935792">
+            <failure message="expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;Possible quota limitations in place o…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;Possible quota limitations in place o…&apos;
+
+- Expected
++ Received
+
+- Possible quota limitations in place or slow response times detected. Switching to the gemini-2.5-flash model
++ [API Error: Rate limit exceeded (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:57:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 API error with the vertex message" time="0.001339625">
+            <failure message="expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;request a quota increase through Vert…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;request a quota increase through Vert…&apos;
+
+- Expected
++ Received
+
+- request a quota increase through Vertex
++ [API Error: Rate limit exceeded (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:67:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should return the original message if it is not a JSON error" time="0.000069708">
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should return the original message for malformed JSON" time="0.000054084">
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should handle JSON that does not match the ApiError structure" time="0.000050583">
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a nested API error" time="0.001714417">
+            <failure message="expected &apos;[API Error: Gemini 2.5 Pro Preview do…&apos; to contain &apos;request a quota increase through AI S…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Gemini 2.5 Pro Preview do…&apos; to contain &apos;request a quota increase through AI S…&apos;
+
+- Expected
++ Received
+
+- request a quota increase through AI Studio
++ [API Error: Gemini 2.5 Pro Preview doesn&apos;t have a free quota tier. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. (Status: Too Many Requests)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:111:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a StructuredError" time="0.000059667">
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 StructuredError with the vertex message" time="0.000778542">
+            <failure message="expected &apos;[API Error: Rate limit exceeded]\nPos…&apos; to contain &apos;request a quota increase through Vert…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Rate limit exceeded]\nPos…&apos; to contain &apos;request a quota increase through Vert…&apos;
+
+- Expected
++ Received
+
+- request a quota increase through Vertex
++ [API Error: Rate limit exceeded]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:130:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should handle an unknown error type" time="0.000046917">
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 API error with Pro quota exceeded message for Google auth (Free tier)" time="0.001775292">
+            <failure message="expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;
+
+- Expected
++ Received
+
+- You have reached your daily gemini-2.5-pro quota limit
++ [API Error: Quota exceeded for quota metric &apos;Gemini 2.5 Pro Requests&apos; and limit &apos;RequestsPerDay&apos; of service &apos;generativelanguage.googleapis.com&apos; for consumer &apos;project_number:123456789&apos;. (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:152:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a regular 429 API error with standard message for Google auth" time="0.000532958">
+            <failure message="expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;Possible quota limitations in place o…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;Possible quota limitations in place o…&apos;
+
+- Expected
++ Received
+
+- Possible quota limitations in place or slow response times detected. Switching to the gemini-2.5-flash model
++ [API Error: Rate limit exceeded (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:171:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 API error with generic quota exceeded message for Google auth" time="0.001184542">
+            <failure message="expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily quota lim…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily quota lim…&apos;
+
+- Expected
++ Received
+
+- You have reached your daily quota limit
++ [API Error: Quota exceeded for quota metric &apos;GenerationRequests&apos; and limit &apos;RequestsPerDay&apos; of service &apos;generativelanguage.googleapis.com&apos; for consumer &apos;project_number:123456789&apos;. (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:192:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should prioritize Pro quota message over generic quota message for Google auth" time="0.001458584">
+            <failure message="expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;
+
+- Expected
++ Received
+
+- You have reached your daily gemini-2.5-pro quota limit
++ [API Error: Quota exceeded for quota metric &apos;Gemini 2.5 Pro Requests&apos; and limit &apos;RequestsPerDay&apos; of service &apos;generativelanguage.googleapis.com&apos; for consumer &apos;project_number:123456789&apos;. (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:211:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 API error with Pro quota exceeded message for Google auth (Standard tier)" time="0.00145075">
+            <failure message="expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;
+
+- Expected
++ Received
+
+- You have reached your daily gemini-2.5-pro quota limit
++ [API Error: Quota exceeded for quota metric &apos;Gemini 2.5 Pro Requests&apos; and limit &apos;RequestsPerDay&apos; of service &apos;generativelanguage.googleapis.com&apos; for consumer &apos;project_number:123456789&apos;. (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:230:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a 429 API error with Pro quota exceeded message for Google auth (Legacy tier)" time="0.001421833">
+            <failure message="expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;
+
+- Expected
++ Received
+
+- You have reached your daily gemini-2.5-pro quota limit
++ [API Error: Quota exceeded for quota metric &apos;Gemini 2.5 Pro Requests&apos; and limit &apos;RequestsPerDay&apos; of service &apos;generativelanguage.googleapis.com&apos; for consumer &apos;project_number:123456789&apos;. (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:254:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should handle different Gemini 2.5 version strings in Pro quota exceeded errors" time="0.001420292">
+            <failure message="expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily gemini-2.…&apos;
+
+- Expected
++ Received
+
+- You have reached your daily gemini-2.5-pro quota limit
++ [API Error: Quota exceeded for quota metric &apos;Gemini 2.5 Pro Requests&apos; and limit &apos;RequestsPerDay&apos; of service &apos;generativelanguage.googleapis.com&apos; for consumer &apos;project_number:123456789&apos;. (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:286:22
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should not match non-Pro models with similar version strings" time="0.001063917">
+            <system-out>
+[DEBUG] isProQuotaExceededError - full error object: &quot;Quota exceeded for quota metric &apos;Gemini 2.5 Flash Requests&apos; and limit&quot;
+[DEBUG] isProQuotaExceededError checking message: Quota exceeded for quota metric &apos;Gemini 2.5 Flash Requests&apos; and limit
+[DEBUG] isProQuotaExceededError result: [33mfalse[39m
+[DEBUG] isProQuotaExceededError - full error object: &quot;Quota exceeded for quota metric &apos;Gemini 2.5-preview Flash Requests&apos; and limit&quot;
+[DEBUG] isProQuotaExceededError checking message: Quota exceeded for quota metric &apos;Gemini 2.5-preview Flash Requests&apos; and limit
+[DEBUG] isProQuotaExceededError result: [33mfalse[39m
+[DEBUG] isProQuotaExceededError - full error object: &quot;Quota exceeded for quota metric &apos;Gemini 2.5 Ultra Requests&apos; and limit&quot;
+[DEBUG] isProQuotaExceededError checking message: Quota exceeded for quota metric &apos;Gemini 2.5 Ultra Requests&apos; and limit
+[DEBUG] isProQuotaExceededError result: [33mfalse[39m
+[DEBUG] isProQuotaExceededError - full error object: &quot;Quota exceeded for quota metric &apos;Gemini 2.5 Standard Requests&apos; and limit&quot;
+[DEBUG] isProQuotaExceededError checking message: Quota exceeded for quota metric &apos;Gemini 2.5 Standard Requests&apos; and limit
+[DEBUG] isProQuotaExceededError result: [33mfalse[39m
+[DEBUG] isProQuotaExceededError - full error object: &quot;Quota exceeded for quota metric &apos;GenerationRequests&apos; and limit&quot;
+[DEBUG] isProQuotaExceededError checking message: Quota exceeded for quota metric &apos;GenerationRequests&apos; and limit
+[DEBUG] isProQuotaExceededError result: [33mfalse[39m
+[DEBUG] isProQuotaExceededError - full error object: &quot;Quota exceeded for quota metric &apos;EmbeddingRequests&apos; and limit&quot;
+[DEBUG] isProQuotaExceededError checking message: Quota exceeded for quota metric &apos;EmbeddingRequests&apos; and limit
+[DEBUG] isProQuotaExceededError result: [33mfalse[39m
+
+            </system-out>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a generic quota exceeded message for Google auth (Standard tier)" time="0.001158792">
+            <failure message="expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily quota lim…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Quota exceeded for quota …&apos; to contain &apos;You have reached your daily quota lim…&apos;
+
+- Expected
++ Received
+
+- You have reached your daily quota limit
++ [API Error: Quota exceeded for quota metric &apos;GenerationRequests&apos; and limit &apos;RequestsPerDay&apos; of service &apos;generativelanguage.googleapis.com&apos; for consumer &apos;project_number:123456789&apos;. (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:351:20
+
+            </failure>
+        </testcase>
+        <testcase classname="src/ui/utils/errorParsing.test.ts" name="parseAndFormatApiError &gt; should format a regular 429 API error with standard message for Google auth (Standard tier)" time="0.001352875">
+            <failure message="expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;We appreciate you for choosing Gemini…&apos;" type="AssertionError">
+AssertionError: expected &apos;[API Error: Rate limit exceeded (Stat…&apos; to contain &apos;We appreciate you for choosing Gemini…&apos;
+
+- Expected
++ Received
+
+- We appreciate you for choosing Gemini Code Assist and the Gemini CLI
++ [API Error: Rate limit exceeded (Status: RESOURCE_EXHAUSTED)]
++ Possible quota limitations in place or slow response times detected. Switching to the grok-4 model for the rest of this session.
+
+ ❯ src/ui/utils/errorParsing.test.ts:371:20
+
+            </failure>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/formatters.test.ts" timestamp="2025-07-12T22:10:28.061Z" hostname="Mac" tests="14" failures="0" errors="0" skipped="0" time="0.002137417">
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatMemoryUsage &gt; should format bytes into KB" time="0.000740833">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatMemoryUsage &gt; should format bytes into MB" time="0.000072375">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatMemoryUsage &gt; should format bytes into GB" time="0.000048542">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format milliseconds less than a second" time="0.000079667">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format a duration of 0" time="0.000038959">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format an exact number of seconds" time="0.000038542">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format a duration in seconds with one decimal place" time="0.000036292">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format an exact number of minutes" time="0.000038958">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format a duration in minutes and seconds" time="0.000042083">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format an exact number of hours" time="0.000035458">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format a duration in hours and seconds" time="0.000033375">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should format a duration in hours, minutes, and seconds" time="0.000033042">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should handle large durations" time="0.00003375">
+        </testcase>
+        <testcase classname="src/ui/utils/formatters.test.ts" name="formatters &gt; formatDuration &gt; should handle negative durations" time="0.000032334">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/markdownUtilities.test.ts" timestamp="2025-07-12T22:10:28.061Z" hostname="Mac" tests="7" failures="0" errors="0" skipped="0" time="0.002099084">
+        <testcase classname="src/ui/utils/markdownUtilities.test.ts" name="markdownUtilities &gt; findLastSafeSplitPoint &gt; should split at the last double newline if not in a code block" time="0.000972708">
+        </testcase>
+        <testcase classname="src/ui/utils/markdownUtilities.test.ts" name="markdownUtilities &gt; findLastSafeSplitPoint &gt; should return content.length if no safe split point is found" time="0.000091792">
+        </testcase>
+        <testcase classname="src/ui/utils/markdownUtilities.test.ts" name="markdownUtilities &gt; findLastSafeSplitPoint &gt; should prioritize splitting at 
+
+ over being at the very end of the string if the end is not in a code block" time="0.000051625">
+        </testcase>
+        <testcase classname="src/ui/utils/markdownUtilities.test.ts" name="markdownUtilities &gt; findLastSafeSplitPoint &gt; should return content.length if the only 
+
+ is inside a code block and the end of content is not" time="0.000065583">
+        </testcase>
+        <testcase classname="src/ui/utils/markdownUtilities.test.ts" name="markdownUtilities &gt; findLastSafeSplitPoint &gt; should correctly identify the last 
+
+ even if it is followed by text not in a code block" time="0.000038917">
+        </testcase>
+        <testcase classname="src/ui/utils/markdownUtilities.test.ts" name="markdownUtilities &gt; findLastSafeSplitPoint &gt; should return content.length if content is empty" time="0.000035416">
+        </testcase>
+        <testcase classname="src/ui/utils/markdownUtilities.test.ts" name="markdownUtilities &gt; findLastSafeSplitPoint &gt; should return content.length if content has no newlines and no code blocks" time="0.000035583">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/textUtils.test.ts" timestamp="2025-07-12T22:10:28.062Z" hostname="Mac" tests="5" failures="0" errors="0" skipped="0" time="0.001923458">
+        <testcase classname="src/ui/utils/textUtils.test.ts" name="textUtils &gt; isBinary &gt; should return true for a buffer containing a null byte" time="0.000855083">
+        </testcase>
+        <testcase classname="src/ui/utils/textUtils.test.ts" name="textUtils &gt; isBinary &gt; should return false for a buffer containing only text" time="0.000107083">
+        </testcase>
+        <testcase classname="src/ui/utils/textUtils.test.ts" name="textUtils &gt; isBinary &gt; should return false for an empty buffer" time="0.000065375">
+        </testcase>
+        <testcase classname="src/ui/utils/textUtils.test.ts" name="textUtils &gt; isBinary &gt; should return false for a null or undefined buffer" time="0.000060542">
+        </testcase>
+        <testcase classname="src/ui/utils/textUtils.test.ts" name="textUtils &gt; isBinary &gt; should only check the sample size" time="0.000196792">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/utils/updateCheck.test.ts" timestamp="2025-07-12T22:10:28.062Z" hostname="Mac" tests="6" failures="0" errors="0" skipped="0" time="0.003294125">
+        <testcase classname="src/ui/utils/updateCheck.test.ts" name="checkForUpdates &gt; should return null if package.json is missing" time="0.000903917">
+        </testcase>
+        <testcase classname="src/ui/utils/updateCheck.test.ts" name="checkForUpdates &gt; should return null if there is no update" time="0.00010325">
+        </testcase>
+        <testcase classname="src/ui/utils/updateCheck.test.ts" name="checkForUpdates &gt; should return a message if a newer version is available" time="0.00045375">
+        </testcase>
+        <testcase classname="src/ui/utils/updateCheck.test.ts" name="checkForUpdates &gt; should return null if the latest version is the same as the current version" time="0.000101541">
+        </testcase>
+        <testcase classname="src/ui/utils/updateCheck.test.ts" name="checkForUpdates &gt; should return null if the latest version is older than the current version" time="0.000056709">
+        </testcase>
+        <testcase classname="src/ui/utils/updateCheck.test.ts" name="checkForUpdates &gt; should handle errors gracefully" time="0.000936209">
+            <system-err>
+Failed to check for updates: Error: test error
+
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/messages/DiffRenderer.test.tsx" timestamp="2025-07-12T22:10:28.062Z" hostname="Mac" tests="13" failures="0" errors="0" skipped="0" time="0.143488458">
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should call colorizeCode with correct language for new file with known extension" time="0.018902583">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should call colorizeCode with null language for new file with unknown extension" time="0.076193291">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should call colorizeCode with null language for new file if no filename is provided" time="0.010426458">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should render diff content for existing file (not calling colorizeCode directly for the whole block)" time="0.002774167">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should handle diff with only header and no changes" time="0.001237292">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should handle empty diff content" time="0.000498792">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should render a gap indicator for skipped lines" time="0.004133459">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should not render a gap indicator for small gaps (&lt;= MAX_CONTEXT_LINES_WITHOUT_GAP)" time="0.005003167">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should correctly render a diff with multiple hunks and a gap indicator &gt; with terminalWidth 80 and height undefined" time="0.00524175">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should correctly render a diff with multiple hunks and a gap indicator &gt; with terminalWidth 80 and height 6" time="0.003570583">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should correctly render a diff with multiple hunks and a gap indicator &gt; with terminalWidth 30 and height 6" time="0.006311791">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should correctly render a diff with a SVN diff format" time="0.002677">
+        </testcase>
+        <testcase classname="src/ui/components/messages/DiffRenderer.test.tsx" name="&lt;OverflowProvider&gt;&lt;DiffRenderer /&gt;&lt;/OverflowProvider&gt; &gt; should correctly render a new file with no file extension correctly" time="0.005249625">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/messages/ToolConfirmationMessage.test.tsx" timestamp="2025-07-12T22:10:28.063Z" hostname="Mac" tests="2" failures="0" errors="0" skipped="0" time="0.020575292">
+        <testcase classname="src/ui/components/messages/ToolConfirmationMessage.test.tsx" name="ToolConfirmationMessage &gt; should not display urls if prompt and url are the same" time="0.016258542">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolConfirmationMessage.test.tsx" name="ToolConfirmationMessage &gt; should display urls if prompt and url are different" time="0.003688792">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/messages/ToolMessage.test.tsx" timestamp="2025-07-12T22:10:28.063Z" hostname="Mac" tests="11" failures="0" errors="0" skipped="0" time="0.032285458">
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; renders basic tool information" time="0.013741334">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows ✔ for Success status" time="0.001325666">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows o for Pending status" time="0.001011625">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows ? for Confirming status" time="0.00103225">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows - for Canceled status" time="0.000949875">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows x for Error status" time="0.000947416">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows paused spinner for Executing status when streamingState is Idle" time="0.001121708">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows paused spinner for Executing status when streamingState is WaitingForConfirmation" time="0.001045458">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; ToolStatusIndicator rendering &gt; shows MockRespondingSpinner for Executing status when streamingState is Responding" time="0.001182333">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; renders DiffRenderer for diff results" time="0.006672833">
+        </testcase>
+        <testcase classname="src/ui/components/messages/ToolMessage.test.tsx" name="&lt;ToolMessage /&gt; &gt; renders emphasis correctly" time="0.002500958">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/shared/MaxSizedBox.test.tsx" timestamp="2025-07-12T22:10:28.064Z" hostname="Mac" tests="16" failures="0" errors="0" skipped="0" time="0.039814792">
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; renders children without truncation when they fit" time="0.012892875">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; hides lines when content exceeds maxHeight" time="0.001636916">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; hides lines at the end when content exceeds maxHeight and overflowDirection is bottom" time="0.000960458">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; wraps text that exceeds maxWidth" time="0.001296458">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; handles mixed wrapping and non-wrapping segments" time="0.004480459">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; handles words longer than maxWidth by splitting them" time="0.002930834">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; does not truncate when maxHeight is undefined" time="0.000798875">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; shows plural &quot;lines&quot; when more than one line is hidden" time="0.000819291">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; shows plural &quot;lines&quot; when more than one line is hidden and overflowDirection is bottom" time="0.000861667">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; renders an empty box for empty children" time="0.000303959">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; wraps text with multi-byte unicode characters correctly" time="0.000682208">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; wraps text with multi-byte emoji characters correctly" time="0.00072975">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; accounts for additionalHiddenLinesCount" time="0.00087225">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; handles React.Fragment as a child" time="0.001075375">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; clips a long single text child from the top" time="0.005953584">
+        </testcase>
+        <testcase classname="src/ui/components/shared/MaxSizedBox.test.tsx" name="&lt;MaxSizedBox /&gt; &gt; clips a long single text child from the bottom" time="0.002412042">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/ui/components/shared/text-buffer.test.ts" timestamp="2025-07-12T22:10:28.065Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0">
+        <testcase classname="src/ui/components/shared/text-buffer.test.ts" name="src/ui/components/shared/text-buffer.test.ts" time="0">
+            <failure message="Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js" type="Error">
+Error: Cannot find module &apos;@testing-library/dom&apos;
+Require stack:
+- /Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js
+ ❯ Object.&lt;anonymous&gt; node_modules/@testing-library/react/dist/pure.js:46:12
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+Serialized Error: { code: &apos;MODULE_NOT_FOUND&apos;, requireStack: [ &apos;/Users/sam/sites/GrokCLI/packages/cli/node_modules/@testing-library/react/dist/pure.js&apos; ] }
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="1" failures="1" errors="0" time="0.017277292">
+    <testsuite name="src/core/grokClient.test.ts" timestamp="2025-07-12T22:29:17.958Z" hostname="Mac" tests="1" failures="1" errors="0" skipped="0" time="0.017277292">
+        <testcase classname="src/core/grokClient.test.ts" name="GrokClient &gt; should initialize with tools and handle tool calls" time="0.01664425">
+            <system-err>
+Warning: Could not read directory /mock/dir: ENOENT: no such file or directory, scandir &apos;/mock/dir&apos;
+
+Error initializing Grok chat session. Full report available at: /var/folders/6j/zscd_z_56svbhtbfxkyhb4fc0000gn/T/gemini-client-error-startChat-2025-07-12T22-29-17-607Z.json
+
+            </system-err>
+            <failure message="Failed to initialize chat: Content generator not initialized" type="Error">
+Error: Failed to initialize chat: Content generator not initialized
+ ❯ GrokClient.startChat src/core/grokClient.ts:254:13
+ ❯ GrokClient.initialize src/core/grokClient.ts:111:17
+ ❯ src/core/grokClient.test.ts:129:5
+
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>
