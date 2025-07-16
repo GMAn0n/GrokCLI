@@ -21,7 +21,7 @@ A powerful command-line interface for interacting with Grok (xAI) that supports 
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/GMAn0n/GrokCLI
 cd GrokCLI
 
 # Install dependencies
@@ -30,8 +30,11 @@ npm install
 # Build the project
 npm run build
 
-# Start the CLI
-npm start
+# Install GrokCLI globally (so you can run 'grok' from anywhere)
+npm install -g .
+
+# Now you can run the CLI from anywhere:
+grok
 ```
 
 ### Usage
@@ -57,11 +60,8 @@ GrokCLI supports the following file operations:
 
 ## Authentication
 
-The CLI supports multiple authentication methods:
+**API Key**: Use your xAI API key directly
 
-1. **OAuth (Recommended)**: Login with your Google account
-2. **API Key**: Use your xAI API key directly
-3. **Cloud Shell**: Use Google Cloud Shell credentials
 
 ## Development
 
